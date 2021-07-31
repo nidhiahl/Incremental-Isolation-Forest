@@ -1,0 +1,1 @@
+Files in this sub directory contains the detailed output for each individual run of the algorihtm. Separate file for the staic and incrememtnal results of single increment sizes are created. Each file contains information of all the runs corresponding to individual increment size. Files names are self descriptive and tells what results are stored in that particular file.
