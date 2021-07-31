@@ -10,7 +10,7 @@ sudo apt-get install libboost-all-dev
 
 # Compilation details
 ```
-g++ filename.cpp -lboos_serailiztion
+g++ filename.cpp -lboost_serailiztion
 ```
 # Repository description
 Isquare Forest consists of the following code files and sub directories containing preapred dataset for demonstration. 
@@ -23,12 +23,28 @@ Isquare Forest consists of the following code files and sub directories containi
 Following Python file for analysis and getting consolidated output : Running following four python scripts once are sufficient for getting all the results corresponding to any dataset.
  
 3. analysisExcludingErrorForAddition.py: pytohn script to run the algorithm for all different versions of each increment size and provide the consolidated output without computing error in pairwise mass based similarity score.
+Command to execute along with the required command line inputs.
+```
+python3 analysisExcludingErrorForAddition.py baseD31 D31Static D31Inc 50 0.01 50 256 10 D31ds
+```
 
 4. analysisExcludingErrorForDeletion.py: pytohn script to run the algorithm for all different versions of each increment size and provide the consolidated output without computing error in pairwise mass based similarity score.
+Command to execute along with the required command line inputs.
+```
+python3 analysisExcludingErrorForDeletion.py D31 D31Static D31Inc 50 0.01 256 10 D31deleteds
+```
 
 5. analysisIncludingErrorForAddition.py: pytohn script to run the algorithm for all different versions of each increment size and provide the consolidated output including pairwise mass based similarity score error computation.
+Command to execute along with the required command line inputs.
+```
+python3 analysisIncludingErrorForAddition.py baseD31 D31Static D31Inc 50 0.01 256 3 D31ds
+```
 
-6. analysisIncludingErrorFordeletion.py: pytohn script to run the algorithm for all different versions of each increment size and provide the consolidated output including pairwise mass based similarity score error computation.
+6. analysisIncludingErrorForDeletion.py: pytohn script to run the algorithm for all different versions of each increment size and provide the consolidated output including pairwise mass based similarity score error computation.
+Command to execute along with the required command line inputs.
+```
+python3 analysisIncludingErrorForDeletion.py D31 D31Static D31Inc 50 0.01 256 3 D31deleteds
+```
 
 7. compareMassFiles.cpp: code to compare the computed the mass based similarity score value of each pair across multiple static runs to compute static error and for incrmental error this code compares the similarity score values computed using static and incremental algorithm as well.
 
