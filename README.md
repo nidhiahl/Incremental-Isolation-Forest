@@ -1,6 +1,8 @@
 # Incremental-Isolation-Forest
-Isolation forest for dynamic datasets
-Isquare Forest directory consists of all the c++ code requred for reproducing the results along with one of the dataset that We have used for our experiments. You can run the code on any data of numeric type, how to prepare dataset for experiments is given in below description.
+
+Isquare Forest directory consists of all the c++ code required for reproducing the results along with one of the dataset that We have used for our experiments. You can run the code on any data of numeric type, how to prepare dataset for experiments is given in below description.
+
+Note: Replace D31 everywhere in the repository by any dataset name you are using.
 
 # Installation Details
 Installing Boost c++ library for serialization.
@@ -20,7 +22,7 @@ Isquare Forest consists of the following code files and sub directories containi
 2. D31deleteds: this sub-directory consists of 10 different versions for each increment size and there are 19 different increment sizes we have in the range [0.1%, 0.9%] and [1%, 10%]. All the versions of each increment size  has two files, for example  "D31Inc_0.000001_ver0" and "D31Static_0.000001_ver0". This subdirectory is used while we handle deletion operations.
 
 
-Following Python file for analysis and getting consolidated output : Running following four python scripts once are sufficient for getting all the results corresponding to any dataset.
+Following Python file for analysis and getting consolidated output : Running following four python scripts once are sufficient for getting all the results corresponding to any dataset. These python scripts writes decriptive results for every individual run of the experiment in the text files inside the subdirectory named as "ResultFiles" and writes down the averaged final output into the console.
  
 3. analysisExcludingErrorForAddition.py: pytohn script to run the algorithm for all different versions of each increment size and provide the consolidated output without computing error in pairwise mass based similarity score.
 Command to execute along with the required command line inputs.
@@ -50,7 +52,7 @@ python3 analysisIncludingErrorForDeletion.py D31 D31Static D31Inc 50 0.01 256 3 
 
 8. dataset.cpp and dataset.h : consists of the code to process the provided dataset file and create a dataset objects to be used in the implementation.
 
-9. iforest.cpp and iforest.h : consists of the functionality related to iforest creation and other operations to performed over the iforest object.
+9. iforest.cpp and iforest.h : consists of the functionality related to iforest creation and other operations to performed over the iforest object. Contains methods to write/read iForest and itree related information into/from the secondary storage. All the infromation is written in the binary files inside the sub-directory named as "IntermediateFiles"
 
 10. itree.cpp and itree.h : consists of the functionality related to itree creation and other operations to performed over the itree object. 
 
