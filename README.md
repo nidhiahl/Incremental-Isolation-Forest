@@ -1,6 +1,6 @@
 # Incremental-Isolation-Forest
 
-Isquare Forest directory consists of all the c++ code required for reproducing the results along with one of the dataset that We have used for our experiments. You can run the code on any data of numeric type, how to prepare dataset for experiments is given in below description. File name "D31" isthe original dataset file. Maintain your original dataset file in the the same format.
+Isquare Forest directory consists of all the c++ code required for reproducing the results along with one of the dataset that We have used for our experiments. You can run the code on any data of numeric type, how to prepare dataset for experiments is given in below description. File name "D31" is the original dataset file. Maintain your original dataset file in the the same format.
 
 Note: Replace D31 everywhere in the repository by any dataset name you are using.
 
