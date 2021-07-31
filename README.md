@@ -4,11 +4,13 @@ Isquare Forest directory consists of all the c++ code requred for reproducing th
 
 # Installation Details
 Installing Boost c++ library for serialization.
-```sudo apt-get install libboost-all-dev
+```
+sudo apt-get install libboost-all-dev
 ```
 
 # Compilation details
-```g++ filename.cpp -lboos_serailiztion
+```
+g++ filename.cpp -lboos_serailiztion
 ```
 # Repository description
 Isquare Forest consists of the following code files and sub directories containing preapred dataset for demonstration. 
