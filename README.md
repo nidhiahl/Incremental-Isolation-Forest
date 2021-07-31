@@ -58,10 +58,16 @@ python3 analysisIncludingErrorForDeletion.py D31 D31Static D31Inc 50 0.01 256 3 
 
 11. treenode.cpp and treenode.h : consists of the functionality related to treenode creation and operations over the treenode object.
 
-12. split_for_addition : this code splits the original dataset file in the desired format (shown in D31ds sub-directory) for addition operation. 
+12. split_for_addition : this code splits the original dataset file in the desired format (shown in D31ds sub-directory) for addition operation. Takes two inputs, one original data file and another number of versions required per version. Provides output files similar to the files in sub directory D31ds.
 
-13. split_for_deletion : this code splits the original dataset file in the desired format (shown in D31deleteds sub-directory) for deletion operation.
+13. split_for_deletion : this code splits the original dataset file in the desired format (shown in D31deleteds sub-directory) for deletion operation. Takes two inputs, one original data file and another number of versions required per version. Provides output files similar to the files in sub directory D31deleteds.
 
 
 # Execution Sequence
-Prepare the required versions and subsets of original dataset using the "split_for_addition.cpp" and "split_for_deletion.cpp" to get data for addition and deletion operation respectively. 
+Prepare the required versions and subsets of original dataset using the "split_for_addition.cpp" and "split_for_deletion.cpp" to get data for addition and deletion operation respectively and stire the results in sub-directories D31ds and D31deleteds. Note: replace D31 with your own datset name. 
+
+Execute the python scripts mentioned in above text. 
+```
+python3 [Above mentioned script name.py] [basesetting data file name] [dataset name]Static [dataset name]Inc [number of iTrees] [smapling factor] [minimum sample size] [number of runs/versions] [sub-directory name containing the prepared data]
+```
+Follow the points 3,4,5,6 in the above text for particular examples. Note replace the D31 with your own datset name.
