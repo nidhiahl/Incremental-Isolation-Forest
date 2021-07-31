@@ -1,6 +1,6 @@
 # Incremental-Isolation-Forest
 
-Isquare Forest directory consists of all the c++ code required for reproducing the results along with one of the dataset that We have used for our experiments. You can run the code on any data of numeric type, how to prepare dataset for experiments is given in below description.
+Isquare Forest directory consists of all the c++ code required for reproducing the results along with one of the dataset that We have used for our experiments. You can run the code on any data of numeric type, how to prepare dataset for experiments is given in below description. File name "D31" isthe original dataset file. Maintain your original dataset file in the the same format.
 
 Note: Replace D31 everywhere in the repository by any dataset name you are using.
 
@@ -70,4 +70,4 @@ Execute the python scripts mentioned in above text.
 ```
 python3 [Above mentioned script name.py] [basesetting data file name] [dataset name]Static [dataset name]Inc [number of iTrees] [smapling factor] [minimum sample size] [number of runs/versions] [sub-directory name containing the prepared data]
 ```
-Follow the points 3,4,5,6 in the above text for particular examples. Note replace the D31 with your own datset name.
+Follow the points 3,4,5,6 in the above text for examples of particular execution commands. Note replace the D31 with your own datset name.
