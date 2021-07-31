@@ -37,6 +37,7 @@ int main(int argc, char* argv[])
  string line;
  string word;
  string infile = argv[1];                //Complete data file.
+ int numVersion = argv[2]; 
  ifstream df(infile.c_str());
  if(!df)
  {
@@ -53,9 +54,6 @@ int main(int argc, char* argv[])
  
  df>>numInst>>numAttr>>blank;
  
- 
- 
- int numVersion = 5;
  cout <<fixed;
  cout <<setprecision(1);
  vector<float> increments = {0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0};
