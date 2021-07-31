@@ -58,6 +58,10 @@ python3 analysisIncludingErrorForDeletion.py D31 D31Static D31Inc 50 0.01 256 3 
 
 11. treenode.cpp and treenode.h : consists of the functionality related to treenode creation and operations over the treenode object.
 
-12. split_for_addition : this code splits the original dataset file in the desired format (shown in D31ds sub-directory) for addition operation.
+12. split_for_addition : this code splits the original dataset file in the desired format (shown in D31ds sub-directory) for addition operation. 
 
 13. split_for_deletion : this code splits the original dataset file in the desired format (shown in D31deleteds sub-directory) for deletion operation.
+
+
+# Execution Sequence
+Prepare the required versions and subsets of original dataset using the "split_for_addition.cpp" and "split_for_deletion.cpp" to get data for addition and deletion operation respectively. 
