@@ -1,1 +1,1 @@
-This sub directory containds the static implementation of the Isolation forests.
+This sub directory contains the static implementation of the Isolation forests.
